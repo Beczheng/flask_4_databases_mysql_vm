@@ -23,5 +23,5 @@
 | Networking | Auto-shutdown (optional) | |
 | Review + create | | |
 
-#### 1. Create VM on GCP
+#### 2. Create VM on GCP
 
