@@ -1,7 +1,21 @@
 # flask_4_databases_mysql_vm
 
-### **Assignment**
+### Assignment
 - Course: HHA 504
 - Homework assignment #5: Manually setting up and running a MySQL instance on a cloud VM.
   
-### **Summary of the assignment**
+### Summary of the assignment
+
+#### 1. Create VM on Azure
+| Tabs | Section | Steps |
+| --- | --- | --- | 
+| Basics | Project details | |
+| Basics | Instance details | |
+| Basics | Administrator account | |
+| Basics | Inbound ports | |
+| Networking | Network interface | |
+| Networking | Auto-shutdown (optional) | |
+| Review + create | | |
+
+#### 1. Create VM on GCP
+
