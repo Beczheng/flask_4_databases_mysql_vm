@@ -10,7 +10,7 @@
 - Login to your Microsoft Azure account.
 - Click the navigation bar.
 - Click `virtual machines`.
-- Click ``.
+- Click `_`.
 - Click `azure virtual machine`.
 
 | Tabs | Section | Steps |
