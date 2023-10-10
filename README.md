@@ -7,6 +7,12 @@
 ### Summary of the assignment
 
 #### 1. Create VM on Azure
+- Login to your Microsoft Azure account.
+- Click the navigation bar.
+- Click `virtual machines`.
+- Click ``.
+- Click `azure virtual machine`.
+
 | Tabs | Section | Steps |
 | --- | --- | --- | 
 | Basics | Project details | |
