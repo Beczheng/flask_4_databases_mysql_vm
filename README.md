@@ -39,6 +39,13 @@
   4. Type 'GRANT ALL PRIVEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. Use your non-root username. This will grant privileges to the non-root user.
  
 #### 3. Connect to MySQL Workbench
+- Setting up the MySQL port
+  1. Go back to your VM on Azure.
+  2. Click `network settings`.
+  3. Scroll to inbound port rules and click the drop down for `+ create port rule`.
+  4. Click `inbound port rule`.
+  5. CHnage the service to `MySQL`. Make sure that the destination port range is 3306.
+  6. Click `add`.
 - Allow a MySQL Workbench connection 
   1. In your cloud shell terminal, do `control + D`.
   2. In the terminal, type `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`. This will allow you to change certain MySQL configurations.
@@ -47,13 +54,6 @@
   5. Press `enter`.
   6. Do `control + X` to exit.
   7. For the changes to take place, type `/etc/init.d/mysql restart` in the terminal. This will restart MySQL.
-- Setting up the MySQL port 
-  1. Go back to your VM on Azure.
-  2. Click `network settings`.
-  3. Scroll to inbound port rules and click the drop down for `+ create port rule`.
-  4. Click `inbound port rule`.
-  5. CHnage the service to `MySQL`. Make sure that the destination port range is 3306.
-  6. Click `add`.
 - Connect to MySQL Workbench
   1. Click the `+` button.
   2. Create a connection name.
