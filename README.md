@@ -3,8 +3,10 @@
 ### Assignment
 - Course: HHA 504
 - Homework assignment #5: Manually setting up and running a MySQL instance on a cloud VM.
-  
+
 ### Summary of the assignment
+  
+### Steps to replicate my assignment
 
 #### 1. Create VM on Azure
 - Login to your Microsoft Azure account.
@@ -58,6 +60,8 @@
   5. Username should be from the non-root user.
   6. Click `store in vault`. Password should be from the non-root user.
   7. Click `test connection`.
+ 
+
 
      
 
