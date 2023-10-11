@@ -33,10 +33,10 @@
   2. In the terminal, type `ssh <username>@<ip address>`. Use the username and IP address from your VM on Azure. This will actually connect you to your VM.
   3. In the terminal, type `sudo apt-get update`. This will update the UBUNTU OS.
 - Install and connect to MySQL on the VM 
-  1. In the terminal, type `sudo apt install mysql-client mysql-server` to install MySQL.
+  1. In the terminal, type `sudo apt install mysql-client mysql-server`. This will install MySQL.
   2. In the terminal, type `sudo mysql`. This will connect you to the MySQL server as the root user.
   3. In the terminal, type `CREATE USER `'<username>'@'%' IDENTIFIED BY '<password>';`. Create your own username and password. This will connect you to the MySQL server as a non-root user.
-  4. Type 'GRANT ALL PRIVEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. Use the username for your non-root user. This will grant privelegs to the non-root user.
+  4. Type 'GRANT ALL PRIVEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. Use your non-root username. This will grant privileges to the non-root user.
  
 #### 3. Connect to MySQL Workbench
 - Allow a MySQL connection (Cloud Shell)
