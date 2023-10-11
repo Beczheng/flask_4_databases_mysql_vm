@@ -15,8 +15,8 @@
 
 | Tabs | Section | Steps |
 | --- | --- | --- | 
-| Basics | Project details | Create a new resource group for "resource group". |
-| Basics | Instance details | Create a name for "virtual machine name". For "region", select `(US) East US`. For "security type", select `standard`. For "size", click `see all sizes` and select `B1ms`. |
+| Basics | Project details | For "resource group", create a new resource group. |
+| Basics | Instance details | For "virtual machine name", create a new name for the VM. For "region", select `(US) East US`. For "security type", select `standard`. For "size", click `see all sizes` and select `B1ms`. |
 | Basics | Administrator account | For "authentication type", select `password`. Create your own username and password. |
 | Basics | Inbound port rules | For "select inbound ports", select `HTTP(80)` and `HTTPS(443)`. |
 | Networking | Network interface | Click `delete public IP and NIC when VM is deleted` box. |
