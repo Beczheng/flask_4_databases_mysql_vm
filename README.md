@@ -16,8 +16,8 @@
 | Tabs | Section | Steps |
 | --- | --- | --- | 
 | Basics | Project details | Next to "resource group", create a new resource group. |
-| Basics | Instance details | Next to "virtual machine name", create a virtual machine name |
-| Basics | Administrator account | Next to "region", select `(US) East US`. Then, next to "security type", select `standard`. After, next to "size", click `see all sizes` and select `B1ms` |
+| Basics | Instance details | Next to "virtual machine name", create a virtual machine name. Then, next to "region", select `(US) East US`. Then, next to "security type", select `standard`. After, next to "size", click `see all sizes` and select `B1ms` |
+| Basics | Administrator account |  |
 | Basics | Inbound ports | |
 | Networking | Network interface | |
 | Networking | Auto-shutdown (optional) | |
