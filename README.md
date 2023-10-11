@@ -5,6 +5,8 @@
 - Homework assignment #5: Manually setting up and running a MySQL instance on a cloud VM.
 
 ### Summary of the assignment
+- Database schema
+- Errors
   
 ### Steps to replicate my assignment
 
@@ -26,15 +28,15 @@
 | Review + create | | When reviewing the VM, it should say `1 X Standard B1ms by Microsoft` and `0.0207 USD/hr`. |
 
 #### 2. Install MySQL on VM 
-- Connect to the VM (Cloud Shell)
-  1. In your terminal, type `ssh`.
-  2. Type `ssh <username>@<ip address>`. Use the username and IP address from your VM on Azure.
-  3. Type `sudo apt-get update`. This will update the UBUNTU OS.
-- Install and connect to MySQL on the VM (Cloud Shell)
-  1. Type `sudo apt install mysql-client mysql-server` to install MySQL.
-  2. Type `sudo mysql`. This will connect you to the MySQL server as the root user.
-  3. Type `CREATE USER `'<username>'@'%' IDENTIFIED BY '<password>';`. Create your own username and password. This will connect you to the MySQL server as a non-root user.
-  4. Type 'GRANT ALL PRIVEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. This will grant privelegs to the non-root user.
+- Connect to the VM 
+  1. In your cloud shell terminal, type `ssh`. This will help secure the connection to your VM.
+  2. In the terminal, type `ssh <username>@<ip address>`. Use the username and IP address from your VM on Azure. This will actually connect you to your VM.
+  3. In the terminal, type `sudo apt-get update`. This will update the UBUNTU OS.
+- Install and connect to MySQL on the VM 
+  1. In the terminal, type `sudo apt install mysql-client mysql-server` to install MySQL.
+  2. In the terminal, type `sudo mysql`. This will connect you to the MySQL server as the root user.
+  3. In the terminal, type `CREATE USER `'<username>'@'%' IDENTIFIED BY '<password>';`. Create your own username and password. This will connect you to the MySQL server as a non-root user.
+  4. Type 'GRANT ALL PRIVEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. Use the username for your non-root user. This will grant privelegs to the non-root user.
  
 #### 3. Connect to MySQL Workbench
 - Allow a MySQL connection (Cloud Shell)
