@@ -42,12 +42,11 @@
 - Setting up the MySQL port
   1. Go back to your VM on Azure.
   2. Click `network settings`.
-  3. Scroll to inbound port rules and click the drop down for `+ create port rule`.
-  4. Click `inbound port rule`.
+  3. Scroll to inbound port rules and click the drop down for `+ create port rule`. Then, click `inbound port rule`.
   5. Change the service to `MySQL`. Make sure that the destination port range is 3306.
   6. Click `add`.
 - Setting up MySQL configurations 
-  1. In your cloud shell terminal, do `control + D`.
+  1. In your cloud shell terminal, do Control + D.
   2. In the terminal, type `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`. This will allow you to change certain MySQL configurations.
   3. Then, set both the bind-address and mysqlx-bind-address to `0.0.0.0`.
   4. Do Control + O to save.
