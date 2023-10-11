@@ -20,7 +20,7 @@
 | Basics | Administrator account | For "authentication type", select `password`. Create your own username and password. |
 | Basics | Inbound port rules | For "select inbound ports", select `HTTP(80)` and `HTTPS(443)`. |
 | Networking | Network interface | Click `delete public IP and NIC when VM is deleted` box. |
-| Networking | Auto-shutdown | Click `enable auto-shutdown`. For "shutdown time", type `11:59:00 PM`. For`time zone`, select `(UTC-05:00) Eastern Time (US & Canada)`. |
+| Networking | Auto-shutdown | Click `enable auto-shutdown`. For "shutdown time", type `11:59:00 PM`. For "time zone", select `(UTC-05:00) Eastern Time (US & Canada)`. |
 | Review + create | | When reviewing the VM, it should say `1 X Standard B1ms by Microsoft` and `0.0207 USD/hr`. |
 
 
