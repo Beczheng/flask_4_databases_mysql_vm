@@ -15,13 +15,14 @@
 
 | Tabs | Section | Steps |
 | --- | --- | --- | 
-| Basics | Project details | Next to "resource group", create a new resource group. |
-| Basics | Instance details | Next to "virtual machine name", create a virtual machine name. Then, next to "region", select `(US) East US`. Then, next to "security type", select `standard`. After, next to "size", click `see all sizes` and select `B1ms` |
-| Basics | Administrator account |  |
-| Basics | Inbound ports | |
-| Networking | Network interface | |
-| Networking | Auto-shutdown (optional) | |
-| Review + create | | |
+| Basics | Project details | Create a new resource group for "resource group". |
+| Basics | Instance details | Create a name for "virtual machine name". For "region", select `(US) East US`. For "security type", select `standard`. For "size", click `see all sizes` and select `B1ms`. |
+| Basics | Administrator account | For "authentication type", select `password`. Create your own username and password. |
+| Basics | Inbound port rules | For "select inbound ports", select `HTTP(80)` and `HTTPS(443)`. |
+| Networking | Network interface | Click `delete public IP and NIC when VM is deleted` box. |
+| Networking | Auto-shutdown | Click `enable auto-shutdown box`. For "shutdown time", type `11:59:00 PM`. For`time zone`, select `(UTC-05:00) Eastern Time (US & Canada)`. 
+|
+| Review + create | | When reviewing the VM, it should say `1 X Standard B1ms by Microsoft` and `0.0207 USD/hr`. |
 
 #### 2. Create VM on GCP
 
