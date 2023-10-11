@@ -33,24 +33,24 @@
   2. In the terminal, type `ssh <username>@<ip address>`. Use the username and IP address from your VM on Azure. This will actually connect you to your VM.
   3. In the terminal, type `sudo apt-get update`. This will update the UBUNTU OS.
 - Install and connect to MySQL on the VM 
-  1. In the terminal, type `sudo apt install mysql-client mysql-server`. This will install MySQL.
+  1. In the terminal, type `sudo apt install mysql-client mysql-server`. This will install MySQL server.
   2. In the terminal, type `sudo mysql`. This will connect you to the MySQL server as the root user.
   3. In the terminal, type `CREATE USER '<username>'@'%' IDENTIFIED BY '<password>';`. Create your own username and password. This will connect you to the MySQL server as a non-root user.
   4. Type `GRANT ALL PRIVILEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. Use your non-root username. This will grant privileges to the non-root user.
  
 #### 3. Create a MySQL Workbench connection with the VM
-- Setting up the MySQL port
+- Set up the MySQL port
   1. Go back to your VM on Azure.
   2. Click `network settings`.
   3. Scroll to inbound port rules and click the drop down for `+ create port rule`. Then, click `inbound port rule`.
   5. Change the service to `MySQL`. Make sure that the destination port range is 3306.
   6. Click `add`.
-- Setting up MySQL configurations 
-  1. In your cloud shell terminal, do Control + D.
+- Set up MySQL configurations 
+  1. In your cloud shell terminal, do `control + D`.
   2. In the terminal, type `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`. This will allow you to change certain MySQL configurations.
   3. Then, set both the bind-address and mysqlx-bind-address to `0.0.0.0`.
-  4. Do Control + O to save.
-  5. Do Control + X to exit.
+  4. Do `control + O` to save.
+  5. Do `control + X` to exit.
   6. For the changes to take place, type `/etc/init.d/mysql restart` in the terminal. This will restart MySQL.
 - Connect to MySQL Workbench
   1. Click the `+` button.
