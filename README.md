@@ -16,7 +16,8 @@
 | Tabs | Section | Steps |
 | --- | --- | --- | 
 | Basics | Project details | Create a new resource group for "resource group". |
-| Basics | Instance details | Create a new name for the virtual machine for "virtual machine name". Then, select `(US) East US` for "region". Then, select `standard` for security type. After, select `Ubuntu Server 20/04 LTS - x64 Gen2Lastly` for "image". Lastly, click `see all sizes` and select `B1ms` for "sizes". |
+| Basics | Instance details | Create a new name for the virtual machine for "virtual machine name". 
+Then, select `(US) East US` for "region". Then, select `standard` for security type. After, select `Ubuntu Server 20/04 LTS - x64 Gen2Lastly` for "image". Lastly, click `see all sizes` and select `B1ms` for "sizes". |
 | Basics | Administrator account | For "authentication type", select `password`. Create your own username and password. |
 | Basics | Inbound port rules | For "select inbound ports", select `HTTP(80)` and `HTTPS(443)`. |
 | Networking | Network interface | Click `delete public IP and NIC when VM is deleted`. |
