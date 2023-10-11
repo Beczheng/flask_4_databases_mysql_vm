@@ -24,30 +24,41 @@
 | Review + create | | When reviewing the VM, it should say `1 X Standard B1ms by Microsoft` and `0.0207 USD/hr`. |
 
 #### 2. Install MySQL on VM 
-- Connecting to the VM (Cloud Shell)
+- Connect to the VM (Cloud Shell)
   1. In your terminal, type `ssh`.
-  2. Type `ssh <username>@<ip address>`. Use the username and ip address from your VM on Azure.
-  3. Type `sudo apt-get update` to update the UBUNTU OS.
-- Installing and connecting to MySQL on the VM (Cloud Shell)
+  2. Type `ssh <username>@<ip address>`. Use the username and IP address from your VM on Azure.
+  3. Type `sudo apt-get update`. This will update the UBUNTU OS.
+- Install and connect to MySQL on the VM (Cloud Shell)
   1. Type `sudo apt install mysql-client mysql-server` to install MySQL.
   2. Type `sudo mysql`. This will connect you to the MySQL server as the root user.
   3. Type `CREATE USER `'<username>'@'%' IDENTIFIED BY '<password>';`. Create your own username and password. This will connect you to the MySQL server as a non-root user.
   4. Type 'GRANT ALL PRIVEGES ON *.* TO '<username>'@'%' WITH GRANT OPTION;`. This will grant privelegs to the non-root user.
-- Allowing external connections (Cloud Shell)
-  1. Do `control + D`.
-  2. Type `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf` to change MySQL configurations.
-  3. Set `bind-address = 0.0.0.0` and `mysqlx-bind-address = 0.0.0.0`.
+ 
+#### 3. Connect to MySQL Workbench
+- Allow a MySQL connection (Cloud Shell)
+  1. In your terminal, do `control + D`.
+  2. Type `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`. This will allow you to change certain MySQL configurations.
+  3. Then, set both the bind-address and mysqlx-bind-address to `0.0.0.0`.
   4. Do `control + O` to save.
-  5. Press 'enter`.
+  5. Press `enter`.
   6. Do `control + X` to exit.
-  7. Type `/etc/init.d/mysql restart`.
-- Setting up a port (Azure)
+  7. For the changes to take place, type `/etc/init.d/mysql restart`. This will restart MySQL.
+- Setting up the MySQL port (Azure)
   1. Go back to your VM on Azure.
   2. Click `network settings`.
-  3. Scroll to inbound port rules and Click the drop down for `+create port rule`.
+  3. Scroll to inbound port rules and click the drop down for `+ create port rule`.
   4. Click `inbound port rule`.
-  5. Service: `MySQL` (make sure destination port range is 3306).
+  5. CHnage the service to `MySQL`. Make sure that the destination port range is 3306.
   6. Click `add`.
+- Connect to MySQL Workbench
+  1. Click the `+` button.
+  2. Create a connection name.
+  3. For the host name, use the IP address from your VM on Azure.
+  4. For the port, set it to `3306`.
+  5. Username should be from the non-root user.
+  6. Click `store in vault`. Password should be from the non-root user.
+  7. Click `test connection`.
+
      
 
   
