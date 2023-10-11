@@ -50,9 +50,9 @@
   1. In your cloud shell terminal, do `control + D`.
   2. In the terminal, type `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`. This will allow you to change certain MySQL configurations.
   3. Then, set both the bind-address and mysqlx-bind-address to `0.0.0.0`.
-  4. Do `control + O` to save.
-  5. Press `enter`.
-  6. Do `control + X` to exit.
+  4. Do control + O to save.
+  5. Press enter.
+  6. Do control + X to exit.
   7. For the changes to take place, type `/etc/init.d/mysql restart` in the terminal. This will restart MySQL.
 - Connect to MySQL Workbench
   1. Click the `+` button.
