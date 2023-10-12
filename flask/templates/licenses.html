@@ -1,0 +1,31 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<section class="mb-6 table-container">
+    <div class="table">
+        <h2 class="text-xl mb-2">Licenses Table</h2>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">License ID</th>
+                    <th class="px-4 py-2">Doctor ID</th>
+                    <th class="px-4 py-2">License Number</th>
+                    <th class="px-4 py-2">Issue Date</th>
+                    <th class="px-4 py-2">Expiration Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for licenses in data2 %}
+                <tr>
+                    <td class="border px-4 py-2">{{ licenses.license_id }}</td>
+                    <td class="border px-4 py-2">{{ licenses.doctor_id }}</td>
+                    <td class="border px-4 py-2">{{ licenses.license_number }}</td>
+                    <td class="border px-4 py-2">{{ licenses.issue_date }}</td>
+                    <td class="border px-4 py-2">{{ licenses.expiration_date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
