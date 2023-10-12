@@ -8,7 +8,7 @@
 - Database schema
   1. For the database, I created a two tables: `doctors` and `licenses`. In the `doctors` table, I included the following columns: `doctord_id, first_name, and last_name`. In the `licenses` table: I included the following columns: `license_id, doctor_id, license_number, issue_date, and expiration_date`. 
 - Errors
-  1. Though I forgot to take screenshots, I ran into some of errors. For example, I forgot to install the `dotenv` package in my cloud shell environment. In addition, I made a bunch of spelling errors, which prevented me from successfully running my flask application.
+  1. Though I forgot to take screenshots, I ran into some of errors. For example, I forgot to install the `dotenv` package in my cloud shell environment. In addition, I made a couple of spelling errors, which prevented me from successfully running my flask application.
   
 ### Steps to replicate my assignment
 
