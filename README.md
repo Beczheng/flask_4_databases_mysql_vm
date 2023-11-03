@@ -63,11 +63,6 @@
   - For the username, use the username of your non-root user.
   - Click `store in vault`. For the password, use the password of your non-root user.
   - Click `test connection`.
- 
-
-
-     
-
   
 
 
